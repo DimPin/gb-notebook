@@ -9,8 +9,6 @@ import java.util.Objects;
 public class UserController {
     private final GBRepository<User, Long> repository;
 
-
-
     public UserController(GBRepository<User, Long> repository) {
         this.repository = repository;
     }
@@ -23,7 +21,7 @@ public class UserController {
         List<User> users = repository.findAll();
         for (User user : users) {
             if (Objects.equals(user.getId(), userId)) {
-                return user;
+               return user;
             }
         }
 
