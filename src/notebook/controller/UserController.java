@@ -44,4 +44,12 @@ public class UserController {
             throw new RuntimeException(e);
         }
     }
+
+    public boolean userRemove(Long id) {
+        try {
+            return repository.delete(id);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
