@@ -45,7 +45,7 @@ public class UserView {
                     }
                     break;
                 case UPDATE:
-                    long userId = Long.parseLong(prompt("Input id user: "));
+                    long userId = Long.parseLong(prompt("Введите id пользователя: "));
                     String updateName = prompt("Имя: ");
                     String updateLastName = prompt("Фамилия: ");
                     String updatePhone = prompt("Номер телефона: ");
@@ -53,7 +53,7 @@ public class UserView {
                     userController.userUpdate(userId, updatedUser);
                     break;
                 case REMOVE:
-                    long userRemoveId = Long.parseLong(prompt("Input id user: "));
+                    long userRemoveId = Long.parseLong(prompt("Введите id пользователя: "));
                     userController.userRemove(userRemoveId);
                     break;
             }
