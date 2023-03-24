@@ -1,10 +1,10 @@
-package notebook.dao.impl;
-
-import notebook.dao.Operation;
+package notebook.impl;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import notebook.Operation;
 
 public class FileOperation implements Operation<String> {
     private final String fileName;
